@@ -16,7 +16,7 @@ def testFunction() -> None:
     showInfo("Card count: %d" % cardCount)
 
 # create a new menu item, "test"
-action = QAction("test", mw)
+action = QAction("Export Stats", mw)
 # set it to call testFunction when it's clicked
 qconnect(action.triggered, testFunction)
 # and add it to the tools menu
