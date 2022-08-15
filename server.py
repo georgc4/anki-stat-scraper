@@ -6,7 +6,7 @@ class Server:
     def __init__(self):
         self.HEADER = 64
         self.PORT = 5050
-        self.SERVER = socket.gethostbyname(socket.gethostname())
+        self.SERVER = '192.168.1.125'
         self.ADDR = (self.SERVER, self.PORT)
         self.FORMAT = 'utf-8'
         self.DISCONNECT_MESSAGE = "!DISCONNECT"
