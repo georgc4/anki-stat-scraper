@@ -74,12 +74,12 @@ def export_stats() -> None:
     #     "mongodb+srv://cgeorges:<password>@cluster0.7txg8.mongodb.net/?retryWrites=true&w=majority")
     # db = client.test
     dates, cards, times = get_revs()
-    name, nshe = dialog.main()
-    print(name,nshe)
+    dialog.main()
+
 
 
 # create a new menu item, "test"
-action = QAction("Export Stats WIP", mw)
+action = QAction("Export Stats", mw)
 # set it to call testFunction when it's clicked
 qconnect(action.triggered, export_stats)
 # and add it to the tools menu
