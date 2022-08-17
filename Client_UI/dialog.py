@@ -7,7 +7,7 @@ from PySide6.QtWidgets import QApplication, QDialog
 # You need to run the following command to generate the ui_form.py file
 #     pyside6-uic form.ui -o ui_form.py, or
 #     pyside2-uic form.ui -o ui_form.py
-from ui_form import Ui_Dialog
+from .ui_form import Ui_Dialog
 
 class Dialog(QDialog):
     def __init__(self, parent=None):
@@ -16,8 +16,8 @@ class Dialog(QDialog):
         self.ui.setupUi(self)
 
 
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
+def main():
+    app = QApplication.instance()
     widget = Dialog()
-    widget.show()
-    sys.exit(app.exec())
+    widget.exec_()
+    print('here')

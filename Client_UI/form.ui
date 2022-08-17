@@ -13,27 +13,17 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>60</y>
-     <width>113</width>
+     <x>340</x>
+     <y>300</y>
+     <width>80</width>
      <height>25</height>
     </rect>
    </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>60</y>
-     <width>51</width>
-     <height>17</height>
-    </rect>
-   </property>
    <property name="text">
-    <string>NSHE</string>
+    <string>PushButton</string>
    </property>
   </widget>
  </widget>

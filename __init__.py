@@ -7,6 +7,7 @@ from pprint import pprint
 from aqt.utils import showInfo, qconnect
 # import all the Qt GUI library
 from aqt.qt import *
+from .Client_UI import dialog
 import anki.cards
 from datetime import datetime
 from datetime import timedelta
@@ -19,7 +20,7 @@ from anki import hooks
 # We're going to add a menu item below. First we want to create a function to
 # be called when the menu item is activated.
 def get_cards():
-    return self.col.db.first(
+    return mw.col.db.first(
         f"""
     select
     sum(case when queue={QUEUE_TYPE_REV} and ivl >= 21 then 1 else 0 end), -- mtr
@@ -27,7 +28,7 @@ def get_cards():
     sum(case when queue={QUEUE_TYPE_NEW} then 1 else 0 end), -- new
     sum(case when queue<{QUEUE_TYPE_NEW} then 1 else 0 end) -- susp
     from cards where did in %s"""
-        % self._limit()
+        % mw._limit()
     )
 def get_revs():
     today = datetime.today()
@@ -73,6 +74,7 @@ def export_stats() -> None:
     #     "mongodb+srv://cgeorges:<password>@cluster0.7txg8.mongodb.net/?retryWrites=true&w=majority")
     # db = client.test
     dates, cards, times = get_revs()
+    dialog.main()
 
 
 
