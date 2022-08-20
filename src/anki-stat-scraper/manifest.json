@@ -1,0 +1,12 @@
+{
+    "name": "Anki Stat Scraper",
+    "package": "anki-stat-scraper",
+    "ankiweb_id": "316208123",
+    "author": "Carlos Georges",
+    "version": "0838089",
+    "homepage": "https://github.com/georg4/anki-stat-scraper",
+    "conflicts": [
+        "316208123"
+    ],
+    "mod": 1660754531
+}

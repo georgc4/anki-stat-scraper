@@ -29,8 +29,8 @@
   <widget class="QWidget" name="name_container" native="true">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>100</y>
+     <x>260</x>
+     <y>80</y>
      <width>120</width>
      <height>80</height>
     </rect>
@@ -62,8 +62,8 @@
   <widget class="QWidget" name="nshe_container" native="true">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>100</y>
+     <x>410</x>
+     <y>80</y>
      <width>120</width>
      <height>80</height>
     </rect>
@@ -91,6 +91,16 @@
      </rect>
     </property>
    </widget>
+  </widget>
+  <widget class="QPlainTextEdit" name="output_box">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>180</y>
+     <width>271</width>
+     <height>181</height>
+    </rect>
+   </property>
   </widget>
  </widget>
  <resources/>
