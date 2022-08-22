@@ -19,12 +19,3 @@ class Client:
         self.client.send(send_length)
         self.client.send(message)
         print(self.client.recv(2048).decode(self.FORMAT))
-# client = Client()
-#
-# client.send("Hello World!")
-# input()
-# client.send("Hello Everyone!")
-# input()
-# client.send("Hello Tim!")
-#
-# client.send(client.DISCONNECT_MESSAGE)

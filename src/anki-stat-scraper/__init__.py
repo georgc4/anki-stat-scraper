@@ -22,21 +22,11 @@ from anki import hooks
 # be called when the menu item is activated.
 
 
-    # def export_stats(self) -> None:
-    #     # get the number of cards in the current collection, which is stored in
-    #     # the main window
-    #
-    #     # client = pymongo.MongoClient(
-    #     #     "mongodb+srv://cgeorges:<password>@cluster0.7txg8.mongodb.net/?retryWrites=true&w=majority")
-    #     # db = client.test
-    #     client = Client()
-
-        # widget.set_output(str(json_doc))
-    # create a new menu item, "test"
+def on_click():
+    widget = Dialog()
+    widget.exec()
 action = QAction("Export Stats 2", mw)
 # set it to call testFunction when it's clicked
-widget = Dialog()
-qconnect(action.triggered, widget.exec)
+qconnect(action.triggered, on_click)
 # and add it to the tools menu
 mw.form.menuTools.addAction(action)
-name,nshe = widget.name, widget.nshe

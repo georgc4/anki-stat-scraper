@@ -1,10 +1,11 @@
 from anki.consts import *
 from datetime import timedelta, datetime
 from aqt import mw
-
+from anki.utils import ids2str
 class Queryer:
     def get_cards(self):
-        return mw.col.db.first(
+        limit = ids2str([d["id"] for d in mw.col.decks.all()])
+        db_hit= mw.col.db.first(
             f"""
         select
         sum(case when queue={QUEUE_TYPE_REV} and ivl >= 21 then 1 else 0 end), -- mtr
@@ -12,8 +13,32 @@ class Queryer:
         sum(case when queue={QUEUE_TYPE_NEW} then 1 else 0 end), -- new
         sum(case when queue<{QUEUE_TYPE_NEW} then 1 else 0 end) -- susp
         from cards where did in %s"""
-            % mw._limit()
+            % limit,
         )
+        total = sum(db_hit)
+        unlocked = total - db_hit[2]
+        return total, unlocked
+    def get_hour_bkdwn(self):
+        lim = ''
+        if mw.col.sched_ver() == 1:
+            sd = datetime.fromtimestamp(mw.col.crt)
+            rolloverHour = sd.hour
+        else:
+            rolloverHour = mw.col.conf.get("rollover", 4)
+        db_hit = mw.col.db.all(
+            f"""
+        select
+        23 - ((cast((? - id/1000) / 3600.0 as int)) %% 24) as hour,
+        sum(case when ease = 1 then 0 else 1 end) /
+        cast(count() as float) * 100,
+        count()
+        from revlog where type in ({REVLOG_LRN},{REVLOG_REV},{REVLOG_RELRN}) %s
+        group by hour having count() > 30 order by hour"""
+            % lim,
+            mw.col.sched.day_cutoff,
+        )
+        hours_dict = {(stat[0]+4) % 24 :stat[2] for stat in db_hit}
+        return hours_dict
     def get_revs(self):
         today = datetime.today()
         yesterday = today - timedelta(days=1)

@@ -6,103 +6,2778 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>754</width>
+    <height>428</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QPushButton" name="exportButton">
-   <property name="geometry">
-    <rect>
-     <x>350</x>
-     <y>390</y>
-     <width>80</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Export</string>
-   </property>
-  </widget>
-  <widget class="QWidget" name="name_container" native="true">
-   <property name="geometry">
-    <rect>
-     <x>260</x>
-     <y>80</y>
-     <width>120</width>
-     <height>80</height>
-    </rect>
-   </property>
-   <widget class="QLabel" name="name_label">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>10</y>
-      <width>51</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Name:*</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="name_entry">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>30</y>
-      <width>113</width>
-      <height>25</height>
-     </rect>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QWidget" name="nshe_container" native="true">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>80</y>
-     <width>120</width>
-     <height>80</height>
-    </rect>
-   </property>
-   <widget class="QLabel" name="nshe_label">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>10</y>
-      <width>51</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>NSHE:*</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="nshe_entry">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>30</y>
-      <width>113</width>
-      <height>25</height>
-     </rect>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QPlainTextEdit" name="output_box">
-   <property name="geometry">
-    <rect>
-     <x>260</x>
-     <y>180</y>
-     <width>271</width>
-     <height>181</height>
-    </rect>
-   </property>
-  </widget>
+  <layout class="QVBoxLayout" name="verticalLayout_5">
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOn</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>720</width>
+        <height>2333</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QWidget" name="name_container" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>60</height>
+          </size>
+         </property>
+         <widget class="QLabel" name="name_label">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>51</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Name:*</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="name_entry">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>30</y>
+            <width>113</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="nshe_container" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>60</height>
+          </size>
+         </property>
+         <widget class="QLabel" name="nshe_label">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>51</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>NSHE:*</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="nshe_entry">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>30</y>
+            <width>113</width>
+            <height>25</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="likert_1" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>501</width>
+           <height>160</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="likert_1_q">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Anki was a useful tool for this organ system exam.</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="likert_1_ans" native="true">
+            <widget class="QRadioButton" name="likert_1_n_button">
+             <property name="geometry">
+              <rect>
+               <x>340</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_1_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_n">
+             <property name="geometry">
+              <rect>
+               <x>320</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Neutral</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_sa_button">
+             <property name="geometry">
+              <rect>
+               <x>540</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_1_group</string>
+             </attribute>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_d_button">
+             <property name="geometry">
+              <rect>
+               <x>240</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_1_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_sa">
+             <property name="geometry">
+              <rect>
+               <x>520</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Strongly agree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="likert_1_sd">
+             <property name="geometry">
+              <rect>
+               <x>120</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Strongly disagree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="likert_1_d">
+             <property name="geometry">
+              <rect>
+               <x>220</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Disagree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_a_button">
+             <property name="geometry">
+              <rect>
+               <x>440</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_1_group</string>
+             </attribute>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_sd_button">
+             <property name="geometry">
+              <rect>
+               <x>140</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_1_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_a">
+             <property name="geometry">
+              <rect>
+               <x>420</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Agree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="likert_2" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>501</width>
+           <height>160</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QLabel" name="likert_2_q">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>I used Anki as one of my primary resources when studying for this exam.</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="likert_1_ans_2" native="true">
+            <widget class="QRadioButton" name="likert_1_n_button_4">
+             <property name="geometry">
+              <rect>
+               <x>340</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_2_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_n_4">
+             <property name="geometry">
+              <rect>
+               <x>320</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Neutral</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_sa_button_4">
+             <property name="geometry">
+              <rect>
+               <x>540</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_2_group</string>
+             </attribute>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_d_button_4">
+             <property name="geometry">
+              <rect>
+               <x>240</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_2_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_sa_4">
+             <property name="geometry">
+              <rect>
+               <x>520</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Strongly agree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="likert_1_sd_4">
+             <property name="geometry">
+              <rect>
+               <x>120</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Strongly disagree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="likert_1_d_4">
+             <property name="geometry">
+              <rect>
+               <x>220</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Disagree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_a_button_4">
+             <property name="geometry">
+              <rect>
+               <x>440</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_2_group</string>
+             </attribute>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_sd_button_4">
+             <property name="geometry">
+              <rect>
+               <x>140</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_2_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_a_4">
+             <property name="geometry">
+              <rect>
+               <x>420</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Agree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="likert_3" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>501</width>
+           <height>160</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QLabel" name="likert_3_q">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Anki's interface is easy to use, and because of this, I am able to use it often.</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="likert_1_ans_3" native="true">
+            <widget class="QRadioButton" name="likert_1_n_button_5">
+             <property name="geometry">
+              <rect>
+               <x>340</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_3_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_n_5">
+             <property name="geometry">
+              <rect>
+               <x>320</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Neutral</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_sa_button_5">
+             <property name="geometry">
+              <rect>
+               <x>540</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_3_group</string>
+             </attribute>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_d_button_5">
+             <property name="geometry">
+              <rect>
+               <x>240</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_3_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_sa_5">
+             <property name="geometry">
+              <rect>
+               <x>520</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Strongly agree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="likert_1_sd_5">
+             <property name="geometry">
+              <rect>
+               <x>120</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Strongly disagree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="likert_1_d_5">
+             <property name="geometry">
+              <rect>
+               <x>220</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Disagree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_a_button_5">
+             <property name="geometry">
+              <rect>
+               <x>440</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_3_group</string>
+             </attribute>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_sd_button_5">
+             <property name="geometry">
+              <rect>
+               <x>140</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_3_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_a_5">
+             <property name="geometry">
+              <rect>
+               <x>420</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Agree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="likert_4" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>501</width>
+           <height>160</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QLabel" name="likert_4_q">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>I feel comfortable downloading and using Anki add-ons to supplement my learning.</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="likert_1_ans_4" native="true">
+            <widget class="QRadioButton" name="likert_1_n_button_6">
+             <property name="geometry">
+              <rect>
+               <x>340</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_4_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_n_6">
+             <property name="geometry">
+              <rect>
+               <x>320</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Neutral</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_sa_button_6">
+             <property name="geometry">
+              <rect>
+               <x>540</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_4_group</string>
+             </attribute>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_d_button_6">
+             <property name="geometry">
+              <rect>
+               <x>240</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_4_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_sa_6">
+             <property name="geometry">
+              <rect>
+               <x>520</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Strongly agree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="likert_1_sd_6">
+             <property name="geometry">
+              <rect>
+               <x>120</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Strongly disagree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="likert_1_d_6">
+             <property name="geometry">
+              <rect>
+               <x>220</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Disagree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_a_button_6">
+             <property name="geometry">
+              <rect>
+               <x>440</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_4_group</string>
+             </attribute>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_sd_button_6">
+             <property name="geometry">
+              <rect>
+               <x>140</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_4_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_a_6">
+             <property name="geometry">
+              <rect>
+               <x>420</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Agree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="likert_8" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>501</width>
+           <height>160</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_10">
+          <item>
+           <widget class="QLabel" name="likert_8_q">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>I feel comfortable showing other medical students how to use Anki.</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="likert_1_ans_8" native="true">
+            <widget class="QRadioButton" name="likert_1_n_button_10">
+             <property name="geometry">
+              <rect>
+               <x>340</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_8_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_n_10">
+             <property name="geometry">
+              <rect>
+               <x>320</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Neutral</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_sa_button_10">
+             <property name="geometry">
+              <rect>
+               <x>540</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_8_group</string>
+             </attribute>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_d_button_10">
+             <property name="geometry">
+              <rect>
+               <x>240</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_8_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_sa_10">
+             <property name="geometry">
+              <rect>
+               <x>520</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Strongly agree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="likert_1_sd_10">
+             <property name="geometry">
+              <rect>
+               <x>120</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Strongly disagree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="likert_1_d_10">
+             <property name="geometry">
+              <rect>
+               <x>220</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Disagree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_a_button_10">
+             <property name="geometry">
+              <rect>
+               <x>440</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_8_group</string>
+             </attribute>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_sd_button_10">
+             <property name="geometry">
+              <rect>
+               <x>140</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_8_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_a_10">
+             <property name="geometry">
+              <rect>
+               <x>420</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Agree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="likert_5" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>501</width>
+           <height>160</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <item>
+           <widget class="QLabel" name="likert_5_q">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Anki is time-consuming and I find myself spending too much time doing flash cards each
+day.</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="likert_1_ans_5" native="true">
+            <widget class="QRadioButton" name="likert_1_n_button_7">
+             <property name="geometry">
+              <rect>
+               <x>340</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_5_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_n_7">
+             <property name="geometry">
+              <rect>
+               <x>320</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Neutral</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_sa_button_7">
+             <property name="geometry">
+              <rect>
+               <x>540</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_5_group</string>
+             </attribute>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_d_button_7">
+             <property name="geometry">
+              <rect>
+               <x>240</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_5_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_sa_7">
+             <property name="geometry">
+              <rect>
+               <x>520</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Strongly agree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="likert_1_sd_7">
+             <property name="geometry">
+              <rect>
+               <x>120</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Strongly disagree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="likert_1_d_7">
+             <property name="geometry">
+              <rect>
+               <x>220</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Disagree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_a_button_7">
+             <property name="geometry">
+              <rect>
+               <x>440</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_5_group</string>
+             </attribute>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_sd_button_7">
+             <property name="geometry">
+              <rect>
+               <x>140</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_5_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_a_7">
+             <property name="geometry">
+              <rect>
+               <x>420</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Agree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="likert_7" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>501</width>
+           <height>160</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <item>
+           <widget class="QLabel" name="likert_7_q">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Anki is only useful to me if I do it each and every day.</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="likert_1_ans_7" native="true">
+            <widget class="QRadioButton" name="likert_1_n_button_9">
+             <property name="geometry">
+              <rect>
+               <x>340</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_7_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_n_9">
+             <property name="geometry">
+              <rect>
+               <x>320</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Neutral</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_sa_button_9">
+             <property name="geometry">
+              <rect>
+               <x>540</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_7_group</string>
+             </attribute>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_d_button_9">
+             <property name="geometry">
+              <rect>
+               <x>240</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_7_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_sa_9">
+             <property name="geometry">
+              <rect>
+               <x>520</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Strongly agree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="likert_1_sd_9">
+             <property name="geometry">
+              <rect>
+               <x>120</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Strongly disagree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="likert_1_d_9">
+             <property name="geometry">
+              <rect>
+               <x>220</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Disagree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_a_button_9">
+             <property name="geometry">
+              <rect>
+               <x>440</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_7_group</string>
+             </attribute>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_sd_button_9">
+             <property name="geometry">
+              <rect>
+               <x>140</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_7_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_a_9">
+             <property name="geometry">
+              <rect>
+               <x>420</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Agree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="likert_6" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>501</width>
+           <height>160</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_8">
+          <item>
+           <widget class="QLabel" name="likert_6_q">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>The information written in the Anki decks I use are digestible and understandable.</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="likert_1_ans_6" native="true">
+            <widget class="QRadioButton" name="likert_1_n_button_8">
+             <property name="geometry">
+              <rect>
+               <x>340</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_6_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_n_8">
+             <property name="geometry">
+              <rect>
+               <x>320</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Neutral</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_sa_button_8">
+             <property name="geometry">
+              <rect>
+               <x>540</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_6_group</string>
+             </attribute>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_d_button_8">
+             <property name="geometry">
+              <rect>
+               <x>240</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_6_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_sa_8">
+             <property name="geometry">
+              <rect>
+               <x>520</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Strongly agree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="likert_1_sd_8">
+             <property name="geometry">
+              <rect>
+               <x>120</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Strongly disagree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="likert_1_d_8">
+             <property name="geometry">
+              <rect>
+               <x>220</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Disagree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_a_button_8">
+             <property name="geometry">
+              <rect>
+               <x>440</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_6_group</string>
+             </attribute>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_sd_button_8">
+             <property name="geometry">
+              <rect>
+               <x>140</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_6_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_a_8">
+             <property name="geometry">
+              <rect>
+               <x>420</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Agree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="likert_9" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>501</width>
+           <height>160</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_15">
+          <item>
+           <widget class="QLabel" name="likert_9_q">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>I have to make edits to the Anki cards frequently in order to understand the content in
+each organ system block.</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="likert_1_ans_13" native="true">
+            <widget class="QRadioButton" name="likert_1_n_button_15">
+             <property name="geometry">
+              <rect>
+               <x>340</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_9_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_n_15">
+             <property name="geometry">
+              <rect>
+               <x>320</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Neutral</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_sa_button_15">
+             <property name="geometry">
+              <rect>
+               <x>540</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_9_group</string>
+             </attribute>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_d_button_15">
+             <property name="geometry">
+              <rect>
+               <x>240</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_9_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_sa_15">
+             <property name="geometry">
+              <rect>
+               <x>520</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Strongly agree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="likert_1_sd_15">
+             <property name="geometry">
+              <rect>
+               <x>120</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Strongly disagree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="likert_1_d_15">
+             <property name="geometry">
+              <rect>
+               <x>220</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Disagree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_a_button_15">
+             <property name="geometry">
+              <rect>
+               <x>440</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_9_group</string>
+             </attribute>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_sd_button_15">
+             <property name="geometry">
+              <rect>
+               <x>140</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_9_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_a_15">
+             <property name="geometry">
+              <rect>
+               <x>420</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Agree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="likert_12" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>501</width>
+           <height>160</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_18">
+          <item>
+           <widget class="QLabel" name="likert_12_q">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>If I miss a card on Anki multiple times, I will suspend the card from my deck.</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="likert_1_ans_16" native="true">
+            <widget class="QRadioButton" name="likert_1_n_button_18">
+             <property name="geometry">
+              <rect>
+               <x>340</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_12_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_n_18">
+             <property name="geometry">
+              <rect>
+               <x>320</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Neutral</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_sa_button_18">
+             <property name="geometry">
+              <rect>
+               <x>540</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_12_group</string>
+             </attribute>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_d_button_18">
+             <property name="geometry">
+              <rect>
+               <x>240</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_12_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_sa_18">
+             <property name="geometry">
+              <rect>
+               <x>520</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Strongly agree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="likert_1_sd_18">
+             <property name="geometry">
+              <rect>
+               <x>120</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Strongly disagree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="likert_1_d_18">
+             <property name="geometry">
+              <rect>
+               <x>220</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Disagree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_a_button_18">
+             <property name="geometry">
+              <rect>
+               <x>440</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_12_group</string>
+             </attribute>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_sd_button_18">
+             <property name="geometry">
+              <rect>
+               <x>140</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_12_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_a_18">
+             <property name="geometry">
+              <rect>
+               <x>420</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Agree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="likert_11" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>501</width>
+           <height>160</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_17">
+          <item>
+           <widget class="QLabel" name="likert_11_q">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>I plan on using Anki throughout all of medical school, including studying for USMLE Step
+1 and USMLE Step 2.</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="likert_1_ans_15" native="true">
+            <widget class="QRadioButton" name="likert_1_n_button_17">
+             <property name="geometry">
+              <rect>
+               <x>340</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_11_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_n_17">
+             <property name="geometry">
+              <rect>
+               <x>320</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Neutral</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_sa_button_17">
+             <property name="geometry">
+              <rect>
+               <x>540</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_11_group</string>
+             </attribute>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_d_button_17">
+             <property name="geometry">
+              <rect>
+               <x>240</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_11_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_sa_17">
+             <property name="geometry">
+              <rect>
+               <x>520</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Strongly agree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="likert_1_sd_17">
+             <property name="geometry">
+              <rect>
+               <x>120</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Strongly disagree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="likert_1_d_17">
+             <property name="geometry">
+              <rect>
+               <x>220</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Disagree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_a_button_17">
+             <property name="geometry">
+              <rect>
+               <x>440</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_11_group</string>
+             </attribute>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_sd_button_17">
+             <property name="geometry">
+              <rect>
+               <x>140</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_11_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_a_17">
+             <property name="geometry">
+              <rect>
+               <x>420</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Agree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="likert_10" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>501</width>
+           <height>160</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_16">
+          <item>
+           <widget class="QLabel" name="likert_10_q">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>I think Anki is necessary to my success as a medical student.</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="likert_1_ans_14" native="true">
+            <widget class="QRadioButton" name="likert_1_n_button_16">
+             <property name="geometry">
+              <rect>
+               <x>340</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_10_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_n_16">
+             <property name="geometry">
+              <rect>
+               <x>320</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Neutral</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_sa_button_16">
+             <property name="geometry">
+              <rect>
+               <x>540</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_10_group</string>
+             </attribute>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_d_button_16">
+             <property name="geometry">
+              <rect>
+               <x>240</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_10_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_sa_16">
+             <property name="geometry">
+              <rect>
+               <x>520</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Strongly agree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="likert_1_sd_16">
+             <property name="geometry">
+              <rect>
+               <x>120</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Strongly disagree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="likert_1_d_16">
+             <property name="geometry">
+              <rect>
+               <x>220</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Disagree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_a_button_16">
+             <property name="geometry">
+              <rect>
+               <x>440</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_10_group</string>
+             </attribute>
+            </widget>
+            <widget class="QRadioButton" name="likert_1_sd_button_16">
+             <property name="geometry">
+              <rect>
+               <x>140</x>
+               <y>40</y>
+               <width>16</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">likert_10_group</string>
+             </attribute>
+            </widget>
+            <widget class="QLabel" name="likert_1_a_16">
+             <property name="geometry">
+              <rect>
+               <x>420</x>
+               <y>0</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Agree</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="free_response" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>501</width>
+           <height>160</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_19">
+          <item>
+           <widget class="QLabel" name="likert_1_q_19">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>How much time did you spend studying for this exam using Anki?</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="horizontalSlider">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="exportButton">
+         <property name="text">
+          <string>Export</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>
+ <buttongroups>
+  <buttongroup name="likert_1_group"/>
+  <buttongroup name="likert_10_group"/>
+  <buttongroup name="likert_11_group"/>
+  <buttongroup name="likert_12_group"/>
+  <buttongroup name="likert_2_group"/>
+  <buttongroup name="likert_3_group"/>
+  <buttongroup name="likert_4_group"/>
+  <buttongroup name="likert_5_group"/>
+  <buttongroup name="likert_6_group"/>
+  <buttongroup name="likert_7_group"/>
+  <buttongroup name="likert_8_group"/>
+  <buttongroup name="likert_9_group"/>
+ </buttongroups>
 </ui>
