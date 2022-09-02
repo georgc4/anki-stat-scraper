@@ -13,5 +13,4 @@ class Client:
         self.client.connect(self.ADDR)
 
     def send(self, msg):
-        msg = struct.pack('>I', len(msg)) + msg.encode(self.FORMAT)
-        self.client.sendall(msg)
+        self.client.sendall(msg.encode(self.FORMAT))
