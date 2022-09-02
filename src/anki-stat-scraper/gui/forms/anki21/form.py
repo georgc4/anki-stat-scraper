@@ -1053,7 +1053,7 @@ class Ui_Dialog(object):
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
         self.aamc_label.setText(_translate("Dialog", "AAMC ID:*"))
         self.exam_label.setText(_translate("Dialog", "Exam:*"))
-        self.comboBox.setItemText(0, _translate("Dialog", "Exam 1: September 9th"))
+        self.comboBox.setItemText(0, _translate("Dialog", "Exam 1: September 7th"))
         self.comboBox.setItemText(1, _translate("Dialog", "Exam 2: October 14th"))
         self.comboBox.setItemText(2, _translate("Dialog", "Exam 3: November 18th"))
         self.comboBox.setItemText(3, _translate("Dialog", "Exam 4: December 9th"))
