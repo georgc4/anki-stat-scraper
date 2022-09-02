@@ -71,14 +71,14 @@ class Dialog(QDialog):
 
     def aamc_is_valid(self):
         aamc = self.get_aamc()
-        return True
+        # return True
         return aamc.isdigit() and len(aamc) == 8
 
     def get_aamc(self):
         return self.ui.aamc_entry.text()
 
     def all_answered(self):
-        return True
+        # return True
         return all([answer.checkedId() != -1 for answer in self.answer_buttons])
 
     def export(self):
@@ -88,7 +88,6 @@ class Dialog(QDialog):
             self.make_json()
             print(self.doc)
             client.send(self.doc)
-            client.send(client.DISCONNECT_MESSAGE)
             self.close()
 
         else:

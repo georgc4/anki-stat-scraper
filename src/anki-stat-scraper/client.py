@@ -14,4 +14,3 @@ class Client:
 
     def send(self, msg):
         self.client.sendall(msg.encode(self.FORMAT))
-        self.client.sendall(self.DISCONNECT_MESSAGE.encode(self.FORMAT))
