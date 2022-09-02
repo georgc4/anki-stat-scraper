@@ -25,7 +25,7 @@ from anki import hooks
 def on_click():
     widget = Dialog()
     widget.exec()
-action = QAction("Export Stats 2", mw)
+action = QAction("Export Stats", mw)
 # set it to call testFunction when it's clicked
 qconnect(action.triggered, on_click)
 # and add it to the tools menu

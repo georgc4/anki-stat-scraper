@@ -17,7 +17,11 @@ class Queryer:
         )
         total = sum(db_hit)
         unlocked = total - db_hit[2]
-        return total, unlocked
+        mature = db_hit[0]
+        yng_lrn = db_hit[1]
+        new = db_hit[2]
+        susp = db_hit[3]
+        return total, unlocked, mature, yng_lrn, new, susp
     def get_hour_bkdwn(self):
         lim = ''
         if mw.col.sched_ver() == 1:
