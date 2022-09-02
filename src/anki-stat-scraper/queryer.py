@@ -15,6 +15,7 @@ class Queryer:
         from cards where did in %s"""
             % limit,
         )
+        db_hit = [x if x is not None else 0 for x in db_hit]
         if db_hit:
             total = sum(db_hit)
             unlocked = total - db_hit[2]
@@ -45,6 +46,7 @@ class Queryer:
             % lim,
             mw.col.sched.day_cutoff,
         )
+        db_hit = [x if x is not None else 0 for x in db_hit]
         if db_hit:
             hours_dict = {(stat[0]+4) % 24 :stat[2] for stat in db_hit}
             return hours_dict
@@ -79,6 +81,7 @@ class Queryer:
             1,
             1,
             )
+        revs = [x if x is not None else 0 for x in db_hit]
         if revs:
             deltas = [rev[0] for rev in revs]
             cards = [sum(rev[1:5]) for rev in revs]
