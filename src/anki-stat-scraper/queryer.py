@@ -81,7 +81,7 @@ class Queryer:
             1,
             1,
             )
-        revs = [x if x is not None else 0 for x in db_hit]
+        revs = [x if x is not None else 0 for x in revs]
         if revs:
             deltas = [rev[0] for rev in revs]
             cards = [sum(rev[1:5]) for rev in revs]
