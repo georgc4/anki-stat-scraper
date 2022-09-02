@@ -15,16 +15,13 @@ class Queryer:
         from cards where did in %s"""
             % limit,
         )
-        if db_hit:
-            total = sum(db_hit)
-            unlocked = total - db_hit[2]
-            mature = db_hit[0]
-            yng_lrn = db_hit[1]
-            new = db_hit[2]
-            susp = db_hit[3]
-            return total, unlocked, mature, yng_lrn, new, susp
-        else:
-            return 0,0,0,0,0,0
+        total = sum(db_hit)
+        unlocked = total - db_hit[2]
+        mature = db_hit[0]
+        yng_lrn = db_hit[1]
+        new = db_hit[2]
+        susp = db_hit[3]
+        return total, unlocked, mature, yng_lrn, new, susp
     def get_hour_bkdwn(self):
         lim = ''
         if mw.col.sched_ver() == 1:
@@ -32,7 +29,6 @@ class Queryer:
             rolloverHour = sd.hour
         else:
             rolloverHour = mw.col.conf.get("rollover", 4)
-
         db_hit = mw.col.db.all(
             f"""
         select
@@ -45,11 +41,8 @@ class Queryer:
             % lim,
             mw.col.sched.day_cutoff,
         )
-        if db_hit:
-            hours_dict = {(stat[0]+4) % 24 :stat[2] for stat in db_hit}
-            return hours_dict
-        else:
-            return {}
+        hours_dict = {(stat[0]+4) % 24 :stat[2] for stat in db_hit}
+        return hours_dict
     def get_revs(self):
         today = datetime.today()
         yesterday = today - timedelta(days=1)
@@ -79,12 +72,8 @@ class Queryer:
             1,
             1,
             )
-        if revs:
-            deltas = [rev[0] for rev in revs]
-            cards = [sum(rev[1:5]) for rev in revs]
-            times = [round(sum(rev[6:10]),3) for rev in revs]
-            dates = [(today + timedelta(days=delta)).strftime("%Y_%m_%d") for delta in deltas]
-            return dates, cards, times
-
-        else:
-            return [], [], []
+        deltas = [rev[0] for rev in revs]
+        cards = [sum(rev[1:5]) for rev in revs]
+        times = [round(sum(rev[6:10]),3) for rev in revs]
+        dates = [(today + timedelta(days=delta)).strftime("%Y_%m_%d") for delta in deltas]
+        return dates, cards, times
